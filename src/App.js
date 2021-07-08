@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import Countdown from "react-countdown";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>ESSEX PHARMA S.A.S. DE C.V.</h1>
+      <h2>Espera por nuestra apertura. Muy pronto.</h2>
+      <Countdown date={new Date(2021, 7, 12)} />
     </div>
   );
 }
